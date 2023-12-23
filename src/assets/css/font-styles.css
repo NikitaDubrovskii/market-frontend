@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'berniershade3';
+  src: url('../fonts/berniershade/BERNIERShade-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/comfortaa/static/Comfortaa-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Glametrix';
+  src: url('../fonts/glametrix/Glametrix.otf') format('opentype');
+}
