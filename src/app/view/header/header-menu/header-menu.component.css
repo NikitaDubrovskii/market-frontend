@@ -1,35 +1,82 @@
-.bg-color-light {
+@media only screen and (max-width: 768px){
+  .categories {
+    display: none;
+  }
+}
+
+.btn-group {
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  font-weight: 600 !important;
+  color: #333333;
+}
+
+.btn:hover {
+  background: none;
+}
+
+.dropdown-menu {
+  inset: -2px auto auto 0 !important;
+  font-size: 14px;
+  z-index: 8;
+  border-radius: 0;
+  border: none;
+}
+
+.dropdown-item {
+  padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+  background: none;
+  text-decoration-line: underline;
+}
+
+.dropdown--icon {
+  height: 12px;
+  width: 12px;
+}
+
+.btn-group:hover .btn {
+  text-decoration: none;
+}
+
+.btn-group:hover .btn::after,
+.btn-group .btn:focus::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 13px;
+}
+
+.btn-group {
+  position: relative;
+}
+
+/*==========================*/
+
+
+.bg--color--light {
   background-color: #ABCDEF !important;
 }
 
-.bg-color {
+.bg--color {
   background-color: #5c82ab !important;
 }
 
-.bottom-border {
-  border-bottom: 1px solid #5c82ab;
+.top--border {
+  border-top: 1px solid #5c82ab;
   padding: 0;
 }
-
-.font1 {
-  font-family: Comfortaa, sans-serif;
-  font-size: 60px !important;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.42);
-}
-
-.font2 {
-  font-family: berniershade3, sans-serif;
-  font-size: 60px !important;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.42);
-}
-
-.font3 {
-  font-family: Glametrix, sans-serif;
-  font-size: 60px !important;
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.42);
-}
-
 

@@ -11,18 +11,20 @@ import {HeaderMenuComponent} from "./header-menu/header-menu.component";
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
+    imports: [
+        CommonModule,
+        RouterModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+    ],
+
+  declarations: [
+    HeaderComponent,
     HeaderNewsComponent,
     HeaderTitleComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
   ],
-
-  declarations: [HeaderComponent],
 
   exports: [HeaderComponent]
 })
