@@ -8,6 +8,7 @@ import {GameCardModule} from "./view/game-card/game-card.module";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarouselModule} from "./view/carousel/carousel.module";
+import {FooterModule} from "./view/footer/footer.module";
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import {CarouselModule} from "./view/carousel/carousel.module";
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
+    FooterModule
   ],
 
   declarations: [
