@@ -7,6 +7,7 @@ import {HeaderModule} from "./view/header/header.module";
 import {GameCardModule} from "./view/game-card/game-card.module";
 import {BrowserModule} from "@angular/platform-browser";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CarouselModule} from "./view/carousel/carousel.module";
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     GameCardModule,
     BrowserModule,
     BrowserAnimationsModule,
+    CarouselModule,
   ],
 
   declarations: [
@@ -29,4 +31,5 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
   exports: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
