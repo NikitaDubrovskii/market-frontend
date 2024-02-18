@@ -1,6 +1,6 @@
 .img--description {
-  min-height: 185px;
-  background-color: #5c82ab;
+  min-height: 206px;
+  background: var(--color-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,3 +111,4 @@
     height: 35px;
   }
 }
+

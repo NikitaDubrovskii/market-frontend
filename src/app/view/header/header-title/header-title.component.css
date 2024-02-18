@@ -84,15 +84,15 @@
 
 
 .bg--color--light {
-  background-color: #ABCDEF !important;
+  background: var(--color-bg-light);
 }
 
 .bg--color {
-  background-color: #5c82ab !important;
+  background: var(--color-bg);
 }
 
 .bottom-border {
-  border-bottom: 1px solid #5c82ab;
+  border-bottom: 1px solid var(--color-bg);
   padding: 0;
 }
 

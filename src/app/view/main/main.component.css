@@ -1,0 +1,20 @@
+.btn__more {
+  bottom: 0;
+  right: 10px;
+  color: var(--color-text);
+}
+
+@media only screen and (max-width: 576px) {
+  .btn__more_long {
+    bottom: -30px;
+    right: 10px;
+  }
+
+
+}
+
+.card-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

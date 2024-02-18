@@ -1,0 +1,90 @@
+.game--of--the--day {
+  border: none;
+  box-shadow: 0 0 1px 0 #dfdfdf;
+  transition: transform 0.3s ease;
+}
+
+.img--container {
+  display: flex;
+  height: 309px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img--container img {
+  width: 80%;
+}
+
+.original--price strong {
+  font-size: 16px;
+  color: #999;
+}
+
+.discounted--price {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.discount {
+  margin-left: 20px;
+  font-size: larger;
+  color: red;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  .card-body div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .discounted--price {
+    margin-left: 10px;
+  }
+
+  .discount {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .img--container img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .discount {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .img--container {
+    height: 200px;
+  }
+
+  .card-group {
+    flex-direction: column;
+  }
+
+  .img--container img {
+    width: 90%;
+  }
+
+  .game--of--the--day a {
+    display: flex;
+    align-items: center;
+  }
+
+}

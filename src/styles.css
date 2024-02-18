@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Comfortaa, sans-serif !important; background-color: #fafafa !important}
+:root {
+  /*--color-bg-light: #ABCDEF;*/
+  /*--color-bg-light: #aac6d6;*/
+  --color-bg-light: #99cad9;
+  /*--color-bg: #5c82ab;*/
+  /*--color-bg: #33556c;*/
+  --color-bg: #02586f;
+  --color-text: #333333;
+}
+
+html, body {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+}
+body {
+  margin: 0;
+  font-family: Comfortaa, sans-serif !important;
+  background-color: #fafafa !important;
+  /*background-color: #000000 !important;*/
+  color: #333333 !important;
+}

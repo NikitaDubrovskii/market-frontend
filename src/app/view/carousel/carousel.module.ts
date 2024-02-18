@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {RouterModule} from "@angular/router";
 import {CarouselComponent} from "./carousel.component";
 
@@ -11,4 +11,5 @@ import {CarouselComponent} from "./carousel.component";
   ],
   exports: [CarouselComponent]
 })
-export class CarouselModule { }
+export class CarouselModule {
+}
