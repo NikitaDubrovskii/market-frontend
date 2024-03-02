@@ -1,7 +1,37 @@
 <div class="card-group" #sales>
+  <div class="card sales" *ngFor="let game of saleGames; let i = index">
+    <a href="#" class="text-decoration-none" style="color: #333333">
+      <div class="img--container col-4 col-md-12">
+        <!--        <img src="./assets/img/discounts%20and%20promotions/1.jpg" class="card-img-top rounded-start" alt="...">-->
+        <img src="{{dataURI(game.imagePreview.imageBytes)}}" class="card-img-top rounded-start" alt="Game Sale">
+      </div>
+
+      <div class="card-body col-8 col-md-12">
+        <h5 class="card-title">{{ game.name }}</h5>
+        <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">{{ game.description }}</small>
+        </p>
+        <div>
+          <span class="original--price">
+            <strong><span class="text-decoration-line-through">$ {{ price1[i] }} </span><sup
+              class="text-decoration-line-through">{{ price2[i] }}</sup> </strong>
+          </span>
+
+          <span class="discounted--price">
+            <strong> <span> $ {{ discountPrice1[i] }} </span><sup>{{ discountPrice2[i] }}</sup></strong>
+          </span>
+
+          <span class="discount">Save {{ game.discount }}%</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!--
+<div class="card-group" #sales>
   <div class="card sales">
       <a href="#" class="text-decoration-none" style="color: #333333">
-        <div class="img--container col-4 col-md-12">
+        <div class="img&#45;&#45;container col-4 col-md-12">
           <img src="./assets/img/discounts%20and%20promotions/1.jpg" class="card-img-top rounded-start" alt="...">
         </div>
 
@@ -10,12 +40,12 @@
           <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Expanse for the Russian
             soul</small></p>
           <div>
-          <span class="original--price">
+          <span class="original&#45;&#45;price">
             <strong><span class="text-decoration-line-through">$ 15 </span><sup
               class="text-decoration-line-through">99</sup> </strong>
           </span>
 
-            <span class="discounted--price">
+            <span class="discounted&#45;&#45;price">
             <strong> <span> $ 10 </span><sup>99</sup></strong>
           </span>
 
@@ -27,7 +57,7 @@
 
   <div class="card sales">
       <a href="#" class="text-decoration-none" style="color: #333333">
-        <div class="img--container col-4 col-md-12">
+        <div class="img&#45;&#45;container col-4 col-md-12">
           <img src="./assets/img/discounts%20and%20promotions/2.jpg" class="card-img-top" alt="...">
         </div>
 
@@ -38,12 +68,12 @@
           </p>
 
           <div>
-          <span class="original--price">
+          <span class="original&#45;&#45;price">
             <strong><span class="text-decoration-line-through">$ 15 </span><sup
               class="text-decoration-line-through">99</sup> </strong>
           </span>
 
-            <span class="discounted--price">
+            <span class="discounted&#45;&#45;price">
             <strong> <span> $ 10 </span><sup>99</sup></strong>
           </span>
 
@@ -55,7 +85,7 @@
 
   <div class="card sales">
       <a href="#" class="text-decoration-none" style="color: #333333">
-        <div class="img--container col-4 col-md-12">
+        <div class="img&#45;&#45;container col-4 col-md-12">
           <img src="./assets/img/discounts%20and%20promotions/3.jpg" class="card-img-top" alt="...">
         </div>
 
@@ -64,12 +94,12 @@
           <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Sailor's Set</small></p>
 
           <div>
-          <span class="original--price">
+          <span class="original&#45;&#45;price">
             <strong><span class="text-decoration-line-through">$ 15 </span><sup
               class="text-decoration-line-through">99</sup> </strong>
           </span>
 
-            <span class="discounted--price">
+            <span class="discounted&#45;&#45;price">
             <strong> <span> $ 10 </span><sup>99</sup></strong>
           </span>
 
@@ -81,3 +111,4 @@
   </div>
 
 </div>
+-->

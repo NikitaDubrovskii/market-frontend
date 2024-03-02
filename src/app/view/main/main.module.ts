@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {MainComponent} from "./main.component";
 import {AboutUsComponent} from "./about-us/about-us.component";
 import {GameOfTheDayComponent} from "./game-of-the-day/game-of-the-day.component";
@@ -23,11 +23,12 @@ import {BrandsComponent} from "./brands/brands.component";
     PopularComponent,
     BrandsComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    CarouselModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        CarouselModule,
+        NgOptimizedImage
+    ],
   exports: [MainComponent]
 })
 export class MainModule {

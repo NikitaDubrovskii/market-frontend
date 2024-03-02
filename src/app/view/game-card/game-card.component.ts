@@ -7,5 +7,5 @@ import {Game} from "../../model/game";
   styleUrl: './game-card.component.css'
 })
 export class GameCardComponent {
-  @Input() game: Game | undefined;
+  /*@Input() game: Game | undefined;*/
 }

@@ -1,7 +1,30 @@
 <div class="card-group justify-content-center">
-  <div class="card new">
+  <div class="card new" *ngFor="let game of newGames; let i = index">
     <a href="#" class="text-decoration-none" style="color: #333333">
       <div class="img--container col-4 col-md-12">
+        <img src="{{dataURI(game.imagePreview.imageBytes)}}" class="card-img-top" alt="New Game">
+      </div>
+
+      <div class="card-body col-8 col-md-12">
+        <div class="card-subtitle text-body-secondary date">since {{ game.dateAdded }}</div>
+        <h5 class="card-title">{{ game.name }}</h5>
+        <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">{{ game.description }}</small>
+        </p>
+
+        <span class="original--price">
+          <strong><span>$ {{ price1[i] }} </span><sup>{{ price2[i] }}</sup> </strong>
+        </span>
+
+      </div>
+    </a>
+  </div>
+</div>
+
+<!--
+<div class="card-group justify-content-center">
+  <div class="card new">
+    <a href="#" class="text-decoration-none" style="color: #333333">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/new%20items/dajs-taun-00-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
@@ -11,7 +34,7 @@
         <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Is there still gunpowder in
           the flasks?</small></p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -21,7 +44,7 @@
 
   <div class="card new">
     <a href="#" class="text-decoration-none" style="color: #333333">
-      <div class="img--container col-4 col-md-12">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/new%20items/Exploding-Kittens00-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
@@ -32,7 +55,7 @@
           explosions</small>
         </p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -42,7 +65,7 @@
 
   <div class="card new">
     <a href="#" class="text-decoration-none" style="color: #333333">
-      <div class="img--container col-4 col-md-12">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/new%20items/Kovarniy_Lis-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
@@ -52,7 +75,7 @@
         <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Oh, that red
           scoundrel!</small></p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -61,3 +84,4 @@
   </div>
 
 </div>
+-->

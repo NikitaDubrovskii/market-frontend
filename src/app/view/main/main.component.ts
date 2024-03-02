@@ -11,6 +11,7 @@ import {NewsComponent} from "./news/news.component";
 })
 
 export class MainComponent implements OnInit, AfterViewInit {
+
   @ViewChild(GameOfTheDayComponent) gameOfTheDay!: GameOfTheDayComponent;
   @ViewChild(SalesComponent) sales!: SalesComponent;
   @ViewChild(NewComponent) new!: NewComponent;
@@ -22,12 +23,14 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    if (window.innerWidth >= 992) {
-      this.setHeightBetweenFirstAndSecondComponent();
-      this.setHeightBetweenThirdAndFourthComponent();
-    } else if (window.innerWidth >= 768) {
-      this.setHeightBetweenFirstAndFourthComponent();
-    }
+    setTimeout(() => {
+      if (window.innerWidth >= 992) {
+        this.setHeightBetweenFirstAndSecondComponent();
+        this.setHeightBetweenThirdAndFourthComponent();
+      } else if (window.innerWidth >= 768) {
+        this.setHeightBetweenFirstAndFourthComponent();
+      }
+    }, 100);
   }
 
   ngOnInit() {

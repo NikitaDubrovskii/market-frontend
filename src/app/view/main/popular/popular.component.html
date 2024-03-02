@@ -1,15 +1,38 @@
 <div class="card-group justify-content-center">
-  <div class="card popular">
+  <div class="card popular" *ngFor="let game of popularGames; let i = index">
     <a href="#" class="text-decoration-none" style="color: #333333">
       <div class="img--container col-4 col-md-12">
+        <!--        <img src="./assets/img/popular/carcassonne_2022_00-1024x1024-wm.jpg" class="card-img-top" alt="...">-->
+        <!--        <img src="{{imagePreview[i]}}" class="card-img-top" alt="game image">-->
+        <img src="{{dataURI(game.imagePreview.imageBytes)}}" class="card-img-top" alt="Popular Game">
+      </div>
+
+      <div class="card-body col-8 col-md-12">
+        <h5 class="card-title">{{ game.name }}</h5>
+        <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">{{ game.description }}</small>
+        </p>
+
+        <span class="original--price">
+          <strong><span>$ {{ price1[i] }} </span><sup>{{ price2[i] }}</sup> </strong>
+        </span>
+
+      </div>
+    </a>
+  </div>
+</div>
+<!--<div class="card-group justify-content-center">
+  <div class="card popular">
+    <a href="#" class="text-decoration-none" style="color: #333333">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/popular/carcassonne_2022_00-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
       <div class="card-body col-8 col-md-12" >
         <h5 class="card-title">Carcassonne</h5>
+&lt;!&ndash;        <h5 class="card-title">{{ firstGame.name }}</h5>&ndash;&gt;
         <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">A legend in a new form</small></p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -19,14 +42,14 @@
 
   <div class="card popular">
     <a href="#" class="text-decoration-none" style="color: #333333">
-      <div class="img--container col-4 col-md-12">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/popular/Loonacy-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
       <div class="card-body col-8 col-md-12">
         <h5 class="card-title">Loonacy</h5>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -36,7 +59,7 @@
 
   <div class="card popular">
     <a href="#" class="text-decoration-none" style="color: #333333">
-      <div class="img--container col-4 col-md-12">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/popular/JKI_UjasArkhama-1024x1024-wm.jpg" class="card-img-top" alt="...">
       </div>
 
@@ -44,7 +67,7 @@
         <h5 class="card-title">Arkham Horror. Card game</h5>
         <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Face your hidden fears!</small></p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -54,7 +77,7 @@
 
   <div class="card popular">
     <a href="#" class="text-decoration-none" style="color: #333333">
-      <div class="img--container col-4 col-md-12">
+      <div class="img&#45;&#45;container col-4 col-md-12">
         <img src="./assets/img/popular/moresol_00-1024x1024-wm.jfif" class="card-img-top" alt="...">
       </div>
 
@@ -62,7 +85,7 @@
         <h5 class="card-title">Sea, salt, paper</h5>
         <p class="card-text"><small class="text-body-secondary fw-lighter text-uppercase">Boats, fish, sharks</small></p>
 
-        <span class="original--price">
+        <span class="original&#45;&#45;price">
           <strong><span>$ 15 </span><sup>99</sup> </strong>
         </span>
 
@@ -70,4 +93,4 @@
     </a>
   </div>
 
-</div>
+</div>-->
