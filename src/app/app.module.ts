@@ -11,6 +11,7 @@ import {MainModule} from "./view/main/main.module";
 import {GAME_URL_TOKEN} from "./data/impl/game.service";
 import {CATEGORY_URL_TOKEN} from "./data/impl/category.service";
 import {HttpClientModule} from "@angular/common/http";
+import {NEWS_URL_TOKEN} from "./data/impl/news.service";
 
 @NgModule({
   imports: [
@@ -37,6 +38,10 @@ import {HttpClientModule} from "@angular/common/http";
     {
       provide: CATEGORY_URL_TOKEN,
       useValue: 'http://localhost:8080/category'
+    },
+    {
+      provide: NEWS_URL_TOKEN,
+      useValue: 'http://localhost:8080/news'
     }
   ],
 

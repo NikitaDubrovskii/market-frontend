@@ -1,4 +1,19 @@
 <div class="news" #news>
+  <a href="#" class="news__link link" *ngFor="let news of allNews; let i = index">
+    <div class="link__body">
+      <div class="link__title">
+        {{ news.title }}
+      </div>
+      <div class="link__text">
+        {{ news.description }}
+      </div>
+      <div class="link__date text-body-secondary fw-lighter">{{ news.dateOfPublication }}</div>
+    </div>
+  </a>
+</div>
+
+<!--
+<div class="news" #news>
   <a href="#" class="news__link link">
     <div class="link__body">
       <div class="link__title">
@@ -57,6 +72,7 @@
       </div>
       <div class="link__date text-body-secondary fw-lighter">08 Feb 2024</div>
     </div>
-<!--    <i class="bi bi-arrow-right link__icon"></i>-->
+&lt;!&ndash;    <i class="bi bi-arrow-right link__icon"></i>&ndash;&gt;
   </a>
 </div>
+-->
