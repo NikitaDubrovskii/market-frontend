@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {interval} from "rxjs";
+import {ShopService} from "../../../data/impl/shop.service";
+import {Shop} from "../../../model/shop";
 
 @Component({
   selector: 'app-header-news',
@@ -7,16 +9,22 @@ import {interval} from "rxjs";
   styleUrl: './header-news.component.css',
 })
 export class HeaderNewsComponent implements OnInit {
-  address1 = '123 Main Street, New York, NY 10001'
-  address2 = 'Open: 9:00 AM - 8:00 PM, Monday to Saturday'
   showAddress1 = true;
+  shops: Shop[] = [];
 
-  constructor() {
+  constructor(private shopService: ShopService) {
   }
 
   ngOnInit(): void {
+    this.getShop();
     interval(5000).subscribe(() => {
       this.showAddress1 = !this.showAddress1;
     });
+  }
+
+  private getShop() {
+    this.shopService.getAll().subscribe(res => {
+      this.shops = res;
+    })
   }
 }

@@ -4,8 +4,8 @@
 
     <div class="col-md-6 col-sm-12 text-center">
       <p class="m-0 font-size marquee">
-        <span *ngIf="showAddress1">{{ address1 }}</span>
-        <span *ngIf="!showAddress1">{{ address2 }}</span>
+        <span *ngIf="showAddress1">{{ shops[0].info }}</span>
+        <span *ngIf="!showAddress1">{{ shops[0].address }}</span>
       </p>
     </div>
 

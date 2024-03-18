@@ -12,6 +12,8 @@ import {GAME_URL_TOKEN} from "./data/impl/game.service";
 import {CATEGORY_URL_TOKEN} from "./data/impl/category.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NEWS_URL_TOKEN} from "./data/impl/news.service";
+import {CAROUSEL_URL_TOKEN} from "./data/impl/carousel.service";
+import {SHOP_URL_TOKEN} from "./data/impl/shop.service";
 
 @NgModule({
   imports: [
@@ -42,7 +44,15 @@ import {NEWS_URL_TOKEN} from "./data/impl/news.service";
     {
       provide: NEWS_URL_TOKEN,
       useValue: 'http://localhost:8080/news'
-    }
+    },
+    {
+      provide: CAROUSEL_URL_TOKEN,
+      useValue: 'http://localhost:8080/carousel'
+    },
+    {
+      provide: SHOP_URL_TOKEN,
+      useValue: 'http://localhost:8080/shop'
+    },
   ],
 
   bootstrap: [AppComponent],
